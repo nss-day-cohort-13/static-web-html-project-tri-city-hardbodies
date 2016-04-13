@@ -15,38 +15,25 @@
 		<nav>
       <div id="topNav">
   			<ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="productPage.html" class="selected">Products</a></li>
-  				<li><a href="testimonial.html">Testimonials</a></li>
-  				<li><a href="contactUs.html">Contact Us</a></li>
+          <a href="index.html"><li>Home</li></a>
+          <a href="productPage.html" class="selected"><li>Products</li></a>
+  				<a href="testimonial.html"><li>Testimonials</li></a>
+  				<a href="contactUs.html"><li>Contact Us</li></a>
   			</ul>
       </div>
 		</nav>
 	</header><!-- /header -->
   <div id="wrapper">
-    <article class = "card" id = "card1"> <!--not sure how I'm going to select each card in order- will keep updated, but I may need to CHANGE THE ID NAME! please use the CLASS selector to style- which is better anyway since there'll be like 8 cards all with the same class.-->
-     <section><!--feel free to put a class in this upper title/image section, I don't think I'll need to-->
-       <h3 class = "cardTitle">Card Title Placeholder 
-        <!-- card title will go here using innerHTML -->
-       </h3>
-       <div class="cardImage">
-         <!-- image will go here using innerHTML -->
-       </div>
-     </section>
-     <section><!--again, feel free to add a class here if you need it, my classes are for the javascript-->
-       <p class="cardDescription">Card description placeholder text so you can style it how you want etc but this will be replaced hopefully by my object text I spent all the morning writing if I can get the javascript to work! fingers and toes crossed eek!</p>
-       <h5>Price = <span class="cardPrice">placeholder dollars</span> + S&H</h5>
-     </section>
-    </article>
+    <!-- note! the entire HTML of each card is in the Javascript. this allows us to easily add an entire new card by just adding an object to our array. so please check the JAVASCRIPT for the classes for each card section! -->
   </div>
   <script src = "product.js"></script>
 	<footer>
     <div id="bottomNav">
   		<ul>
-  			<li><a href="index.html">Home</a></li>
-  			<li><a href="productPage.html" class="selected">Products</a></li>
-  			<li><a href="testimonial.html">Testimonials</a></li>
-  			<li><a href="contactUs.html">Contact Us</a></li>
+  			<a href="index.html"><li>Home</li></a>
+  			<a href="productPage.html" class="selected"><li>Products</li></a>
+  			<a href="testimonial.html"><li>Testimonials</li></a>
+  			<a href="contactUs.html"><li>Contact Us</li></a>
   		</ul>
     </div>
     <div id="copyright">
