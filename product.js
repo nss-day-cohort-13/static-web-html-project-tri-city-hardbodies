@@ -20,19 +20,19 @@ var planet3 = {
 var planet4 = {
  name = "Ice Planet"
  image = "<img src = "img/icePlanet.jpg" alt = "Ice Planet"></img>"
- description ="Perfect for the jilted lover, yeti, or Elsa, this gorgous planet may be lacking in coziness (see 'fuzzy planet'), but features a gorgeous landscape of icicles, snowdrifts, and boulders perfect for the budding ice-architect looking to move beyond the solid-oxygen igloo."
+ description ="Perfect for the jilted lover, yeti, or Elsa, this gorgous planet may be lacking in coziness (see <a href="#">'fuzzy planet'</a>), but features a gorgeous landscape of icicles, snowdrifts, and boulders perfect for the budding ice-architect looking to move beyond the solid-oxygen igloo."
  price = "$60000 plus S&H"
 }
 var planet5 = {
  name = "Aqua Planet"
  image = "<img src = "img/aquaPlanet.png" alt = "Aqua Planet"></img>"
- description = "The perfect planet for fish, orcas, and really really strong swimmers. Seafood lovers, surfers, and otters encouraged as well. BYOB(oat) to this lovely habitat teeming with gorgous marine life and seagulls. Bask in a variety of weather events from light rain to hurricane, and don't worry about staying DRY!"
+ description = "The perfect planet for fish, orcas, and really, really strong swimmers. Seafood lovers, surfers, and otters encouraged as well. BYOB(oat) to this lovely habitat teeming with gorgous marine life and seagulls. Bask in a variety of weather events from light rain to hurricane, and don't worry about staying DRY!"
  price = "$2 million plus S&H"
 }
 var planet6 = {
  name = "Helium Planet"
  image = "<img src = "img/heliumPlanet.jpg" alt = "Helium Planet"></img>"
- description = "An atmosphere made of helium means you and all your visitors will sport Silly Voices while on this planet! Take it a step further by furnishing with all your favorite memes, dad jokes, and hilarious gifs. gravity 40% of earth's surface means even falling down is more funny than painful!"
+ description = "An atmosphere made of helium means you and all your visitors will sport Silly Voices while on this planet! Take it a step further by furnishing with all your favorite memes, dad jokes, and hilarious gifs. Gravity 40% of earth's surface means even falling down is more funny than painful!"
  price = "$415 plus S&H"
 }
 var planet7 = {
