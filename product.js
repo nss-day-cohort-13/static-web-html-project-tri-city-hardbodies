@@ -1,3 +1,8 @@
+//=============================
+//OBJECTS- Add New ones here
+//=============================
+
+
 var planet1 = {
  name: "Fuzzy Planet",
  image: "img/fuzzyPlanet.jpg", 
@@ -40,7 +45,7 @@ var planet5 = {
 
 var planet6 = {
  name: "Helium Planet",
- image: "img/heliumPlanet.jpg"
+ image: "img/heliumPlanet.jpg",
  imgAlt: "Helium Planet",
  description: "An atmosphere made of helium means you and all your visitors will sport Silly Voices while on this planet! Take it a step further by furnishing with all your favorite memes, dad jokes, and hilarious gifs. Gravity 40% of earth's surface means even falling down is more funny than painful!",
  price: "$415"
@@ -56,28 +61,42 @@ var planet7 = {
 
 var planet8 = {
  name: "Pluto",
- image: "img/pluto.png" 
+ image: "img/pluto.png", 
  imgAlt: "Pluto",
  description: "Not technically a planet, this small space body is a great option for the budget-minded planet purchaser. Large heart-shaped landscape feature pre-added, because Pluto Loves You!",
  price: "FREE"
 }
 
+// =====================
+// OTHER VARIABLES
+// =====================
+
+
 var planetArray = [planet1, planet2, planet3, planet4, planet5, planet6, planet7, planet8];
 
 var cardSelector = document.getElementById("wrapper");
  
-var cardContent =
+ // =================
+ // LOOP
+ // =================
+ 
+
+for (var i = 0; i < planetArray.length; i++) {
+cardSelector.innerHTML += 
+// this is the HTML that makes each card. 
 "<article class = 'card'>" +
- "<section>" +//Joe, feel free to add a class name here if needed
-   "<h3 class = 'cardTitle'>" + planetArray[0].name +"</h3>" +
+ "<section>" +//Joe, feel free to add a class name here if needed, it selects the title and the image.
+   "<h3 class = 'cardTitle'>" + planetArray[i].name +"</h3>" +
        "<div class='cardImage'>" +
-         "<img src ='" + planetArray[0].image + "' alt = '" + planetArray[0].imgAlt + "'></img>" +
+         "<img src ='" + planetArray[i].image + "' alt = '" + planetArray[i].imgAlt + "'></img>" +
        "</div>" +
      "</section>" +
-     "<section>" +
-       "<p class = 'cardDescription'>" + planetArray[0].description + "</p>" +
-       "<h5>Price = " + planetArray[0].price + " + S&H</h5>" +
+     "<section>" + //this section holds the description and price. just in case.
+       "<p class = 'cardDescription'>" + planetArray[i].description + "</p>" +
+       "<h5>Price = " + planetArray[i].price + " + S&H</h5>" +
      "</section>" +
     "</article>";
+}
 
-cardSelector.innerHTML = cardContent;
+
+
