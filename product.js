@@ -5,9 +5,9 @@
 
 var planet1 = {
  name: "Fuzzy Planet",
- image: "img/fuzzyPlanet.jpg", 
+ image: "img/fuzzyPlanet.jpg' id = 'fuzz", 
  imgAlt: "Tribble Planet",
- description: "Enjoy soft, cute, plush and squishy EVERYTHING? Don't mind fur in your bathtub? This is the place for you! Approximately 75 miles in diameter with 85% earth gravity, bounce and snuggle your way into this adorable planet today!",
+ description: "Enjoy soft, cute, plush and squishy EVERYTHING? Don't mind <span id='fuzz'>fur</span> in your bathtub? This is the place for you! Approximately 75 miles in diameter with 85% earth gravity, bounce and snuggle your way into this adorable planet today!",
  price: "$800.00"
 }
 
@@ -31,7 +31,7 @@ var planet4 = {
  name: "Ice Planet",
  image: "img/icePlanet.jpg",
  imgAlt: "Ice Planet",
- description: "Perfect for the jilted lover, yeti, or Elsa, this gorgous planet may be lacking in coziness (see <a href='#'>'fuzzy planet'</a>), but features a gorgeous landscape of icicles, snowdrifts, and boulders perfect for the budding ice-architect looking to move beyond the solid-oxygen igloo.",
+ description: "Perfect for the jilted lover, yeti, or Elsa, this gorgous planet may be lacking in coziness (see <a href='#fuzz'>'fuzzy planet'</a>), but features a gorgeous landscape of icicles, snowdrifts, and boulders perfect for the budding ice-architect looking to move beyond the solid-oxygen igloo.",
  price: "$60000"
 }
 
@@ -63,7 +63,7 @@ var planet8 = {
  name: "Pluto",
  image: "img/pluto.png", 
  imgAlt: "Pluto",
- description: "Not technically a planet, this small space body is a great option for the budget-minded planet purchaser. Large heart-shaped landscape feature pre-added, because Pluto Loves You!",
+ description: "Not technically a planet, this small space body is a great option for the budget-minded space dweller. Large heart-shaped landscape feature pre-added, because Pluto Loves You!",
  price: "FREE"
 }
 
