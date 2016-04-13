@@ -47,3 +47,5 @@ var planet8 = {
  description = "Not technically a planet, this small space body is a great option for the budget-minded planet purchaser. Large heart-shaped landscape feature pre-added, because Pluto Loves You!"
  price = "FREE plus S&H"
 }
+
+var planetArray = [planet1, planet2, planet3, planet4, planet5, planet6, planet7, planet8];
