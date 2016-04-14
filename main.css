@@ -22,7 +22,7 @@ body	{
 	background-size: cover;
 	color: #fff;
 	font-family: 'Bangers', sans-serif;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.18em;
 	text-shadow: -3px 3px 10px black;
 }
 
@@ -158,6 +158,46 @@ footer	{
 
 /*---------------------------
 
+INDEX PAGE
+
+----------------------------*/
+
+#columnLeftOne	{
+	display: none;
+}
+
+#columnCenterOne,
+#columnRightOne,
+.companyHistory	{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.profilePics img	{
+	display: block;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: -3px 3px 10px #000;
+}
+
+#Joe,
+#Megan,
+#Amari,
+.companyHistory	{
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #000;
+}
+
+
+.companyHistory h3	{
+	padding: 20px 0;
+}
+
+
+
+/*---------------------------
+
 PRODUCT PAGE
 
 ----------------------------*/
@@ -183,6 +223,7 @@ h5	{
 
 
 .cardImage img	{
+	display: block;
 	margin: 0 auto;
 	border-radius: 20%;
 	box-shadow: -3px 5px 10px black
@@ -347,7 +388,10 @@ MEDIA QUERIES
 @media (min-width: 768px)	{
 
 	.card {
-		padding: 30px 0;
+		width: 90%;
+		margin: 0 auto 20px;
+		padding: 30px 0 0;
+		border-bottom: 1px solid #000;
 	}
 
 	.card,
@@ -440,8 +484,14 @@ MEDIA QUERIES
 
 @media (min-width: 860px)	{
 
+	.cardImage	{
+		width: 40%;
+	}
+
+
+
 	#columnCenterTwo  {
-		width: 47%;
+		width: 50%;
 		display: inline-block;
 	}
 
@@ -455,6 +505,11 @@ MEDIA QUERIES
 		width: 47%;
 		float: right;
 		margin-top: 0;
+	}
+
+
+	#columnRightTwo fieldset	{
+		width: 90%;
 	}
 
 	#wrapper	{
@@ -533,6 +588,22 @@ MEDIA QUERIES
 		justify-content: space-around;
 		margin-bottom: 0;
 	}
+
+	.companyHistory h3	{
+		width: 100%;
+		margin: 0 auto;
+		padding: 20px 0;
+		text-align: center;
+	}
+
+		.cardImage	{
+		width: 30%;
+	}
+
+	.rightSide	{
+		width: 60%;
+	}
+
 
 
 
