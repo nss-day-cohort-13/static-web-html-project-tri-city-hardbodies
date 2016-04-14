@@ -5,7 +5,7 @@
 
 var planet1 = {
  name: "Fuzzy Planet",
- image: "img/fuzzyPlanet.jpg' id = 'fuzz", 
+ image: "img/fuzzyPlanet.jpg' id = 'fuzz",
  imgAlt: "Tribble Planet",
  description: "Enjoy soft, cute, plush and squishy EVERYTHING? Don't mind <span id='fuzz'>fur</span> in your bathtub? This is the place for you! Approximately 75 miles in diameter with 85% earth gravity, bounce and snuggle your way into this adorable planet today!",
  price: "$800.00"
@@ -13,7 +13,7 @@ var planet1 = {
 
 var planet2 = {
  name: "Gas Giant",
- image: "img/gasPlanet.jpg", 
+ image: "img/gasPlanet.jpg",
  imgAlt: "Gas Planet",
  description: "Are you enormous? Made of clouds? Impervious to gale force winds, extreme temperatures, and gravity hundreds of times that of Earth's? Look no further- this gas giant has got it all! Build yourself an igloo made of solid oxygen and settle down in your very own permanent maelstrom today!",
  price: "$40"
@@ -21,7 +21,7 @@ var planet2 = {
 
 var planet3 = {
  name: "Trojan Planet",
- image: "img/trojanPlanet.jpg", 
+ image: "img/trojanPlanet.jpg",
  imgAlt: "Trojan Planet",
  description: "Hypochondriacs rejoice! This extremely well-protected planet is impervious to almost any disease and also includes a hypoallergenic asteroid barrier. Available in sizes Large, Extra Large, Enormous, and Too Big, and ribbed for your pleasure.",
  price: "$300"
@@ -61,7 +61,7 @@ var planet7 = {
 
 var planet8 = {
  name: "Pluto",
- image: "img/pluto.png", 
+ image: "img/pluto.png",
  imgAlt: "Pluto",
  description: "Not technically a planet, this small space body is a great option for the budget-minded space dweller. Large heart-shaped landscape feature pre-added, because Pluto Loves You!",
  price: "FREE"
@@ -75,25 +75,28 @@ var planet8 = {
 var planetArray = [planet1, planet2, planet3, planet4, planet5, planet6, planet7, planet8];
 
 var cardSelector = document.getElementById("wrapper");
- 
+
  // =================
  // LOOP
  // =================
- 
+
 
 for (var i = 0; i < planetArray.length; i++) {
-cardSelector.innerHTML += 
-// this is the HTML that makes each card. 
+cardSelector.innerHTML +=
+// this is the HTML that makes each card.
 "<article class = 'card'>" +
- "<section>" +//Joe, feel free to add a class name here if needed, it selects the title and the image.
-   "<h3 class = 'cardTitle'>" + planetArray[i].name +"</h3>" +
+ // "<section>" +//Joe, feel free to add a class name here if needed, it selects the title and the image.
+
        "<div class='cardImage'>" +
          "<img src ='" + planetArray[i].image + "' alt = '" + planetArray[i].imgAlt + "'></img>" +
        "</div>" +
-     "</section>" +
-     "<section>" + //this section holds the description and price. just in case.
+     // "</section>" +
+     "<section class='rightSide'>" +
+     "<h3 class = 'cardTitle'>" + planetArray[i].name +"</h3>" +
+     "<section class='xxxsectionTwo'>" + //this section holds the description and price. just in case.
        "<p class = 'cardDescription'>" + planetArray[i].description + "</p>" +
        "<h5>Price = " + planetArray[i].price + " + S&H</h5>" +
+     "</section>" +
      "</section>" +
     "</article>";
 }
