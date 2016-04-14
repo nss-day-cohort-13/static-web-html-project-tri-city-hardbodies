@@ -1,5 +1,5 @@
 //=============================
-//OBJECTS- Add New ones here
+//OBJECTS- we can add new ones here to automatically create more cards. 
 //=============================
 
 
@@ -77,23 +77,23 @@ var planetArray = [planet1, planet2, planet3, planet4, planet5, planet6, planet7
 var cardSelector = document.getElementById("wrapper");
 
  // =================
- // LOOP
+ // LOOP This loop creates an entirely new card for each new object. this way we can not only add an infinite number of cards without writing any new HTML, but also the loop only runs once. 
  // =================
 
 
 for (var i = 0; i < planetArray.length; i++) {
 cardSelector.innerHTML +=
-// this is the HTML that makes each card.
+// this is the HTML that makes each card. I concatonated it so it could be as close to standard HTML format as possible, since strings in JS can't be multiline- basically this is a 'mad lib' with the white bits tying back to the keys from the object selected by the loop. 
+// 
 "<article class = 'card'>" +
- // "<section>" +//Joe, feel free to add a class name here if needed, it selects the title and the image.
-
+ // "<section>" 
        "<div class='cardImage'>" +
          "<img src ='" + planetArray[i].image + "' alt = '" + planetArray[i].imgAlt + "'></img>" +
        "</div>" +
      // "</section>" +
      "<section class='rightSide'>" +
      "<h3 class = 'cardTitle'>" + planetArray[i].name +"</h3>" +
-     "<section class='xxxsectionTwo'>" + //this section holds the description and price. just in case.
+     "<section class='xxxsectionTwo'>" + //this section holds the description and price.
        "<p class = 'cardDescription'>" + planetArray[i].description + "</p>" +
        "<h5>Price = " + planetArray[i].price + " + S&H</h5>" +
      "</section>" +
