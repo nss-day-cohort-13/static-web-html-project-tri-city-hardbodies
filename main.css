@@ -174,7 +174,9 @@ h5	{
 */
 .cardTitle	{
 	padding: 15px 0;
+	border-top: 1px solid #000;
 }
+
 
 .cardImage img	{
 	display: block;
@@ -189,7 +191,28 @@ h5	{
 	padding-top: 20px;
 }
 
+/*---------------------------
 
+TESTIMONIALS PAGE
+
+----------------------------*/
+
+#testimonialTitle h1	{
+	margin-top: 0;
+}
+
+img {
+	display: block;
+	margin: 20px auto 20px;
+}
+
+.actualTestimonial	{
+	width: 90%;
+	margin: 0 auto 20px;
+	/*padding-bottom: 5px;*/
+	border-bottom: 1px solid black;
+
+}
 
 
 
@@ -279,6 +302,39 @@ MEDIA QUERIES
 @media (min-width: 768px)	{
 
 
+	.card,
+	.card section {
+		/*border: 1px solid red;*/
+		clear: both;
+	}
+
+	.cardTitle	{
+		border-top: none;
+	}
+
+
+	.cardTitle,
+	.cardImage,
+	.cardDescription {
+		display: inline-block;
+	}
+
+	.cardTitle,
+	.sectionTwo	{
+		float: right;
+		width: 45%;
+	}
+
+	.cardImage {
+		float: left;
+		width: 50%;
+		vertical-align: top;
+		padding-top: 15px;
+	}
+
+	.cardImage img	{
+		width: 90%;
+	}
 
 
 }
