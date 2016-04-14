@@ -23,6 +23,7 @@ body	{
 	color: #fff;
 	font-family: 'Bangers', sans-serif;
 	letter-spacing: 0.1em;
+	text-shadow: -3px 3px 10px black;
 }
 
 a {
@@ -63,7 +64,6 @@ h3	{
 	text-align: center;
 	font-family: 'Bangers', cursive;
 	letter-spacing: 0.1em;
-	text-shadow: -3px 3px 10px black;
 }
 
 
@@ -87,9 +87,6 @@ CONTENT STYLES
 ----------------------------*/
 
 
-
-
-
 #topArea,
 #wrapper,
 footer	{
@@ -104,12 +101,13 @@ footer	{
 
 #wrapper	{
 	background-color: rgba(125, 125, 125, .8);
+	padding-bottom: 15px;
 }
 
 #topArea	{
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-	padding-bottom: 1px;
+	/*padding-bottom: 1px;*/
 }
 
 #topArea nav {
@@ -148,6 +146,7 @@ footer	{
 
 #copyright p	{
 	padding: 10px 0;
+	margin-top: 0;
 }
 
 
@@ -155,6 +154,42 @@ footer	{
 .selected	{
 	color: rgba(230, 196, 62, .8);
 }
+
+
+/*---------------------------
+
+PRODUCT PAGE
+
+----------------------------*/
+
+h5	{
+	text-align: right;
+	padding-right: 15px;
+	margin-bottom: 20px;
+}
+
+/*.card section h5:last-child	{
+	margin-bottom: 0;
+}
+*/
+.cardTitle	{
+	padding: 15px 0;
+}
+
+.cardImage img	{
+	display: block;
+	margin: 0 auto;
+	border-radius: 20%;
+	box-shadow: -3px 5px 10px black
+}
+
+.cardDescription	{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+
 
 
 
@@ -217,7 +252,7 @@ MEDIA QUERIES
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-around;
-		margin-bottom: 0;
+		margin: 0;
 		list-style: none;
 		padding-left: 0;
 	}
@@ -235,6 +270,14 @@ MEDIA QUERIES
 	#topNav li {
 		padding: 5px 30px;
 	}
+
+
+
+}
+
+
+@media (min-width: 768px)	{
+
 
 
 
